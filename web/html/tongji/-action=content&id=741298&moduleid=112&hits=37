@@ -1,0 +1,1 @@
+var HITS_CONTENT ="38";$("#Hits-Content").html(38);

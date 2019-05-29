@@ -1,0 +1,47 @@
+<html><!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>网律云建站提示页面</title>
+</head>
+<style type="text/css">
+    body,div{margin:0;padding:0;}
+    .wl-tips-plue-pop{width:472px;height:520px;margin:0 auto;background:#ccc;position:absolute;left:50%;top:10%;margin:0 0 0 -235px;background:url("../../img1.wanglv.vip/images/wl-tips-plue-pop-20170713.png") no-repeat;font-family:"Microsoft Yahei";}
+    .wl-tips-plue-pop-title{font-size:36px;text-align:center;}
+    .wl-tips-plue-pop .title-c-green{color:#33cc99;margin-top:60px;margin-bottom:20px;}
+    .wl-tips-plue-pop .title-c-yellow{color:#ff9933;margin-top:60px;margin-bottom:20px;}
+    .wl-tips-plue-pop-title i{display:block;width:90px;height:90px;margin:0 auto;background:url(http://img1.wanglv.vip/images/wl-tips-plue-pop-ico-20170713.png) no-repeat}
+    .wl-tips-plue-pop-title i.ico-success{background-position:0 0;}
+    .wl-tips-plue-pop-title i.ico-fail{background-position:0 -90px;}
+    .wl-tips-plue-pop-title i.ico-remind{background-position:0 -180px;}
+    .wl-tips-plue-pop-conts{font-size:16px;color:#555;line-height:28px;width:350px;text-align:center;margin:0 auto 30px auto;}
+    .wl-tips-plue-pop-btn{text-align:center;margin-top:30px;}
+    .wl-tips-plue-pop-txt{font-size:18px;color:#858585;text-align:center;}
+    .wl-tips-plue-pop-txt a{padding:0 5px;color:#858585;text-decoration:underline;}
+    .wl-tips-plue-pop-txt a:hover{color:#42afe3;}
+    .wl-tips-plue-pop-txt .time{color:#42afe3;font-weight:700;font-style:normal;padding-right:5px;}
+    .wl-tips-plue-pop-btn a{width:142px;height:40px; transition:0.4s all;background:#42afe3;color:#fff;font-size:16px;display:block;border-radius:20px;line-height:40px;margin:0 auto;text-decoration:none;text-align:center;}
+    .wl-tips-plue-pop-btn a:hover{background:#3b9dcc;}
+</style>
+<body>
+<div class="wl-tips-plue-pop">
+            <div class="wl-tips-plue-pop-title title-c-yellow" ><i class="ico-fail"></i></div>
+        <div class="wl-tips-plue-pop-conts" >当前模块功能：honor 还未开通！</div>
+    
+        <div class="wl-tips-plue-pop-txt">页面自动 <a id="href" href="javascript:history.back(-1);">跳转</a> 等待时间：<em class="time" id="wait">3</em>秒</div>
+    <div class="wl-tips-plue-pop-btn"><a href="javascript:history.back(-1);">确定</a></div>
+    <script type="text/javascript">
+        (function(){
+            var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+            var interval = setInterval(function(){
+                var time = --wait.innerHTML;
+                if(time <= 0) {
+                    location.href = href;
+                    clearInterval(interval);
+                };
+            }, 1000);
+        })();
+    </script>
+</div>
+</body>
+</html>

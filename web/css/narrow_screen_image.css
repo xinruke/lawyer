@@ -1,0 +1,199 @@
+@charset "UTF-8";
+.seaseeyoul-gallery {
+  font-family: "微软雅黑";
+  width: 100%; }
+  .seaseeyoul-gallery .gallery-title-p {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 80px; }
+    .seaseeyoul-gallery .gallery-title-p .gallery-title-name {
+      font-size: 26px; }
+    .seaseeyoul-gallery .gallery-title-p .gallery-title--main-all {
+      font-size: 16px; }
+  .seaseeyoul-gallery .gallery-main-box {
+    width: 1000px;
+       margin: 0 auto;
+    margin-top: 50px;
+    height: 560px;
+    position: relative; }
+    .seaseeyoul-gallery .gallery-main-box .gallery-main-images {
+      width: 1000px;
+      height: 560px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative; }
+      .seaseeyoul-gallery .gallery-main-box .gallery-main-images .gallery-images-item {
+        width: 1000px;
+        height: 560px;
+        line-height: 560px;
+        display: table;
+        text-align: center;
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 0; }
+        .seaseeyoul-gallery .gallery-main-box .gallery-main-images .gallery-images-item .gallery-image-link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: 0; }
+          .seaseeyoul-gallery .gallery-main-box .gallery-main-images .gallery-images-item .gallery-image-link .gallery-image {
+            width: auto;
+            max-width: 1000px;
+            max-height: 560px;
+            vertical-align: middle; }
+      .seaseeyoul-gallery .gallery-main-box .gallery-main-images .gallery-describtion-content,
+      .seaseeyoul-gallery .gallery-main-box .gallery-main-images .gallery-describtion-title {
+        display: none; }
+    .seaseeyoul-gallery .gallery-main-box .gallery-action-left {
+      width: 50px;
+      height: 100px;
+      background-color: #666;
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      left: 0px;
+      top: 230px;
+      cursor: pointer;
+      line-height: 100px;
+      text-align: center; }
+      .seaseeyoul-gallery .gallery-main-box .gallery-action-left a {
+        color: #fff;
+        font-size: 50px; }
+    .seaseeyoul-gallery .gallery-main-box .gallery-action-right {
+      width: 50px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background-color: #666;
+      background-color: rgba(0,0,0,.5);
+      position: absolute;
+      right: 0px;
+      top: 230px;
+      cursor: pointer; }
+      .seaseeyoul-gallery .gallery-main-box .gallery-action-right a {
+        color: #fff;
+        font-size: 50px; }
+  .seaseeyoul-gallery .gallery-describtion {
+    width: 1000px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #5f5f5f;
+    height: 80px; }
+    .seaseeyoul-gallery .gallery-describtion.gallery-describtion-cover {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      width: 100%;
+      height: 100px; }
+    .seaseeyoul-gallery .gallery-describtion .gallery-describte-title {
+      font-size: 14px;
+      height: 24px;
+      font-weight: 600;
+      color: #fff; }
+    .seaseeyoul-gallery .gallery-describtion .gallery-describte-content {
+      font-size: 14px;
+      width: 100%;
+      color: #fff;
+      text-indent: 2em;
+      line-height: 24px; }
+  .seaseeyoul-gallery .gallery-min-box {
+    position: relative;
+    background-color: #eee; }
+    .seaseeyoul-gallery .gallery-min-box .gallery-min-images-box {
+      width: 1000px;
+      height: 86px;
+      margin: 20px auto;
+      overflow: hidden;
+      position: relative; }
+      .seaseeyoul-gallery .gallery-min-box .gallery-min-images-box .gallery-min-images {
+        width: 9999px;
+        height: 86px;
+        position: absolute;
+        top: 0; }
+        .seaseeyoul-gallery .gallery-min-box .gallery-min-images-box .gallery-min-images .gallery-min-images-item {
+          display: block;
+          float: left;
+          width: 106px;
+          height: 86px; }
+          .seaseeyoul-gallery .gallery-min-box .gallery-min-images-box .gallery-min-images .gallery-min-images-item .gallery-min-images-link {
+            display: block;
+            width: 100%;
+            height: 100%; }
+            .seaseeyoul-gallery .gallery-min-box .gallery-min-images-box .gallery-min-images .gallery-min-images-item .gallery-min-images-link .gallery-min-image-this {
+              display: block;
+              width: 100px;
+              height: 80px;
+              border: 3px solid #eee;
+              transition: all 0.35s; }
+
+.gallery-watch-maxImg {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: black; }
+  .gallery-watch-maxImg .gallery-watch-span {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .gallery-watch-maxImg .gallery-watch-span img {
+      vertical-align: middle;
+      width: auto; }
+      .gallery-watch-maxImg .gallery-watch-span img.gallery-watch-max {
+        display: inline;
+        transform: scale(0);
+        transition: all 0.35s; }
+        .gallery-watch-maxImg .gallery-watch-span img.gallery-watch-max.gallery-actived {
+          transform: scale(1);
+          max-height: 100%;
+          max-width: 100%; }
+      .gallery-watch-maxImg .gallery-watch-span img.gallery-watch-loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -32px; }
+  .gallery-watch-maxImg .gallery-watch-close {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 50px;
+    transition: all 0.35s;
+    z-index: 10001; }
+    .gallery-watch-maxImg .gallery-watch-close:hover {
+      background-color: #222;
+      background-color: rgba(255, 255, 255, 0.2); }
+  .gallery-watch-maxImg .gallery-watch-describte {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    line-height: 24px;
+    text-align: left; }
+    .gallery-watch-maxImg .gallery-watch-describte .gallery-watch-describte-title {
+      font-size: 14px;
+      height: 24px;
+      font-weight: 600;
+      color: #fff; }
+    .gallery-watch-maxImg .gallery-watch-describte .gallery-watch-describte-content {
+      font-size: 14px;
+      color: #fff;
+      text-indent: 2em;
+      line-height: 24px; }
